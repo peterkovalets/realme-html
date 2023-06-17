@@ -1,0 +1,141 @@
+@media (max-width: 1274px) {
+  .hero {
+    background: none;
+  }
+
+  .categories__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__banner {
+    display: none;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr auto auto;
+  }
+
+  .footer__item {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header__content {
+    gap: 20px;
+  }
+
+  .menu__list--links {
+    width: 100%;
+    height: calc(100vh - 109px);
+    position: fixed;
+    top: 109px;
+    left: -100%;
+    padding-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    transition: left 1s;
+  }
+
+  .header.active .menu__list--links {
+    left: 0;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+
+  .menu__list--links .menu__item {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 110px 0 130px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .hero__price {
+    margin-top: 45px;
+  }
+
+  .categories__items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 565px) {
+  .hero {
+    padding: 100px 0 115px;
+  }
+
+  .hero__content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero__btns {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .hero__text {
+    margin-top: 10px;
+  }
+
+  .hero__price {
+    margin-top: 40px;
+  }
+
+  .categories {
+    padding-top: 40px;
+  }
+
+  .section {
+    padding-top: 40px;
+  }
+
+  .section--last {
+    padding-bottom: 40px;
+  }
+
+  .section__btn {
+    margin-top: 10px;
+  }
+
+  .section__content {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    row-gap: 20px;
+  }
+}
